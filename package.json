@@ -7,7 +7,8 @@
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
   },
   "author": "",
   "license": "ISC",
@@ -17,7 +18,12 @@
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "create-symlink": "^1.0.0",
+    "imagemin": "^7.0.0",
+    "imagemin-jpegtran": "^6.0.0",
+    "imagemin-pngquant": "^8.0.0",
     "jquery": "^3.4.1",
+    "path": "^0.12.7",
     "popper.js": "^1.15.0"
   }
 }
